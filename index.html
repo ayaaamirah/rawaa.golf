@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجع الجولف الملكي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* التصميم العام */
+        body {
+            font-family: 'Almarai', sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #11a03a, #2ab20b);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 4rem;
+            font-weight: bold;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav {
+            background-color:#11a03a, #2ab20b;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #11a03a, #2ab20b;
+            transform: translateY(-3px);
+        }
+
+        .container {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 50px;
+            color: #11a03a, #2ab20b;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .facility {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .facility:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .facility img {
+            width: 100%;
+            height: 200px;
+            border-radius: 15px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .facility:hover img {
+            transform: scale(1.05);
+        }
+
+        .facility h3 {
+            font-size: 2rem;
+            color: #11a03a, #2ab20b;
+            margin: 20px 0 10px;
+        }
+
+        .facility p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #11a03a, #2ab20b);
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 40px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #11a03a, #2ab20b);
+        }
+
+        footer {
+            background-color:  #11a03a, #2ab20b;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            font-size: 1.1rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* تحسينات للجوال */
+        @media (max-width: 768px) {
+            .facilities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>منتجع هول ان ون</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">الصفحة الرئيسية</a>
+        <a href="خمس جولات.html">خمسِ جولات</a>
+        <a href="حزمة tee triple.html"> حزمة tee triple</a>
+        <a href="الحزمة المخصصة .html">الحزمة المخصصة</a>
+        <a href="https://wa.me/0775583740">استفسار/حجز</a> <!-- إضافة الرابط هنا -->
+        <a href="الاساله الشائعة .html">الأسئلة الشائعة</a>
+        <a href="حزمة الراحة والرفاهية.html">حزمة الراحة والرفاهية </a>
+        <a href="تعليقات.html">تعليقات</a>
+    </nav>
+
+    <div class="container">
+        <h2>مرحبًا بكم في منتجع هول ان ون</h2>
+        <p>منتجع جولف هول ان ون هو وجهتك المثالية لعشاق الرياضة والترفيه. يتميز المنتجع بملاعب جولف عالمية المستوى، مرافق فاخرة، وخدمات استثنائية. سواء كنت تبحث عن الاسترخاء أو المغامرة، ستجد هنا كل ما تحتاجه لقضاء وقت لا يُنسى.</p>
+
+        <div class="facilities-grid">
+            <!-- مرفق 1 -->
+            <div class="facility">
+                <img src="img/1.jpeg" alt="الإقامة الفاخرة">
+                <h3>1. الإقامة الفاخرة</h3>
+                <p>استمتع بالإقامة في أجنحة فاخرة مجهزة بأحدث التقنيات وتوفر إطلالات خلابة على الطبيعة. الغرف مصممة لتمنحك الراحة القصوى.</p>
+            </div>
+
+            <!-- مرفق 2 -->
+            <div class="facility">
+                <img src="img/2.jpg" alt="ملاعب الجولف">
+                <h3>2. ملاعب الجولف</h3>
+                <p>يضم المنتجع ملاعب جولف مميزة مصممة لتلبية احتياجات جميع المستويات. استمتع بلعبة الجولف في أجواء طبيعية خلابة.</p>
+            </div>
+
+            <!-- مرفق 3 -->
+            <div class="facility">
+                <img src="img/3.jpg" alt="تدريب شخصي">
+                <h3>3. تدريب شخصي</h3>
+                <p>يوفر المنتجع مدربين محترفين يقدمون دروسًا مخصصة لتحسين أدائك في الجولف. استفد من الخبرة والنصائح العملية.</p>
+            </div>
+
+            <!-- مرفق 4 -->
+            <div class="facility">
+                <img src="img/3.jpeg" alt="دروس للمبتدئين">
+                <h3>4. دروس للمبتدئين</h3>
+                <p>سواء كنت جديدًا في اللعبة أو ترغب في تحسين مهاراتك، لدينا دروس تناسب الجميع مع مدربين محترفين.</p>
+            </div>
+
+            <!-- مرفق 5 -->
+            <div class="facility">
+                <img src="img/7.png" alt="ساحة تدريب مضاءة">
+                <h3>5. ساحة تدريب مضاءة</h3>
+                <p>استمتع بالتدريب في أي وقت من اليوم في ساحة مضاءة بالكامل ومجهزة بأحدث التقنيات.</p>
+            </div>
+
+            <!-- مرفق 6 -->
+            <div class="facility">
+                <img src="img/4.jpeg" alt="مطاعم مميزة">
+                <h3>6. مطاعم مميزة</h3>
+                <p>استمتع بمجموعة متنوعة من الأطباق العالمية والمحلية في مطاعمنا التي تقدم تجربة طعام فريدة.</p>
+            </div>
+
+            <!-- مرفق 7 -->
+            <div class="facility">
+                <img src="img/5.jpeg" alt="متجر الجولف">
+                <h3>7. متجر الجولف</h3>
+                <p>اكتشف مجموعة واسعة من معدات الجولف والإكسسوارات من أفضل العلامات التجارية في متجرنا.</p>
+            </div>
+
+            <!-- مرفق 8 -->
+            <div class="facility">
+                <img src="img/6.jpg" alt="خدمة حمل المعدات">
+                <h3>8. خدمة حمل المعدات</h3>
+                <p>نقدم لك خدمات حمل المعدات لتسهيل تجربتك في الملاعب. فريقنا جاهز دائمًا لمساعدتك.</p>
+            </div>
+        </div>
+
+        <a href="https://wa.me/0775583740" class="cta-button">احجز الآن</a> <!-- إضافة الرابط هنا -->
+    </div>
+
+    <footer>
+        <p>مرحبًا بكم في منتجع هول ان ون - حيث تلتقي الرياضة والفخامة</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const facilities = document.querySelectorAll(".facility");
+
+            facilities.forEach(facility => {
+                facility.addEventListener("mouseenter", () => {
+                    facility.style.transform = "translateY(-10px)";
+                    facility.querySelector("img").style.transform = "scale(1.05)";
+                });
+
+                facility.addEventListener("mouseleave", () => {
+                    facility.style.transform = "translateY(0)";
+                    facility.querySelector("img").style.transform = "scale(1)";
+                });
+            });
+        });
+    </script>
+    <style>
+        /* التصميم العام */
+        body {
+            font-family: 'Almarai', sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .accessibility-controls {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .accessibility-controls button {
+            font-size: 1rem;
+            padding: 5px 10px;
+            margin: 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="accessibility-controls">
+        <button onclick="increaseFontSize()">تكبير النص</button>
+        <button onclick="decreaseFontSize()">تصغير النص</button>
+    </div>
+    <script>
+        function increaseFontSize() {
+            document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) + 2) + 'px';
+        }
+        function decreaseFontSize() {
+            document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) - 2) + 'px';
+        }
+    </script>
+</body>
+</html>

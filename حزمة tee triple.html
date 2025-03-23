@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حزمة Tee Triple</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* التصميم العام */
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg,  #11a03a, #2ab20b);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: bold;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav {
+            background-color:  #11a03a, #2ab20b;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+            transform: translateY(-3px);
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #2a5298;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .section img {
+            width: 350px;
+            height: 250px;
+            margin-left: 30px;
+            border-radius: 15px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover img {
+            transform: scale(1.05);
+        }
+
+        .section .text {
+            flex: 1;
+        }
+
+        .section h3 {
+            font-size: 1.8rem;
+            color: #2a5298;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            font-size: 1.1rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* تحسينات للجوال */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section img {
+                margin: 0 0 20px 0;
+                width: 100%;
+                height: auto;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>حزمة Tee Triple</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">الصفحة الرئيسية</a>
+        <a href="خمس جولات.html">خمسِ جولات</a>
+        <a href="حزمة tee triple.html"> حزمة tee triple</a>
+        <a href="الحزمة المخصصة .html">الحزمة المخصصة</a>
+        <a href="https://wa.me/0775583740">استفسار/حجز</a> <!-- إضافة الرابط هنا -->
+        <a href="الاساله الشائعة .html">الأسئلة الشائعة</a>
+        <a href="حزمة الراحة والرفاهية.html">حزمة الراحة والرفاهية </a>
+        <a href="تعليقات.html">تعليقات</a>
+    </nav>
+
+    <div class="container">
+        <h2>حزمة Tee Triple</h2>
+
+        <div class="section">
+            <img src="img/9.png" alt="مقدمة الحزمة">
+            <div class="text">
+                <h3>مقدمة حزمة Tee Triple</h3>
+                <p>تُعد حزمة Tee Triple الخيار الأمثل لعشاق الجولف الذين يبحثون عن تجربة مميزة ومليئة بالتحديات. توفر هذه الحزمة ثلاث جولات من اللعب في أجواء احترافية مع إقامة فاخرة وخدمات متميزة تجعل رحلتك لا تُنسى.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <img src="img/1.jpeg" alt="مرافق الحزمة">
+            <div class="text">
+                <h3>مرافق حزمة Tee Triple</h3>
+                <ul>
+                    <li>✔ إقامة لمدة ليلتين في غرفة مريحة مجهزة بأحدث التقنيات.</li>
+                    <li>✔ ثلاث جولات جولف (18 حفرة لكل جولة) في ملاعب ذات تصميم عالمي.</li>
+                    <li>✔ جولة خاصة في ملعب "سي فيو" الشهير، أحد أفضل الملاعب في المنطقة.</li>
+                    <li>✔ تأجير مجاني لعربة الجولف لتسهيل التنقل داخل الملاعب.</li>
+                    <li>✔ خصومات حصرية على مستلزمات الجولف من متجر المنتجع.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <img src="img/11.png" alt="مزايا الحزمة">
+            <div class="text">
+                <h3>مزايا حزمة Tee Triple</h3>
+                <ul>
+                    <li>✔ تجربة جولف مثالية مع ثلاث جولات في ملاعب مميزة.</li>
+                    <li>✔ إقامة فاخرة مع خدمات متكاملة لضمان الراحة التامة.</li>
+                    <li>✔ فرصة لاختبار مهاراتك في ملعب "سي فيو" الشهير.</li>
+                    <li>✔ راحة إضافية مع تأجير مجاني لعربات الجولف.</li>
+                    <li>✔ توفير مالي بفضل الخصومات الحصرية على المستلزمات.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <img src="img/3.jpeg" alt="تجربة الحزمة">
+            <div class="text">
+                <h3>تجربة فريدة مع حزمة Tee Triple</h3>
+                <p>تجمع حزمة Tee Triple بين الإقامة الفاخرة والأنشطة الرياضية الممتعة، مما يجعلها الخيار المثالي لعشاق الجولف. سواء كنت محترفًا أو هاوٍ، ستجد في هذه الحزمة كل ما تحتاجه للاستمتاع بلعبة الجولف والاسترخاء في آن واحد.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>مرحبًا بكم في منتجعنا - حيث تلتقي الرياضة والفخامة</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll(".section");
+
+            sections.forEach(section => {
+                section.addEventListener("mouseenter", () => {
+                    section.style.transform = "translateY(-10px)";
+                    section.querySelector("img").style.transform = "scale(1.05)";
+                });
+
+                section.addEventListener("mouseleave", () => {
+                    section.style.transform = "translateY(0)";
+                    section.querySelector("img").style.transform = "scale(1)";
+                });
+            });
+        });
+    </script>
+    <style>
+        /* التصميم العام */
+        body {
+            font-family: 'Almarai', sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .accessibility-controls {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .accessibility-controls button {
+            font-size: 1rem;
+            padding: 5px 10px;
+            margin: 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="accessibility-controls">
+        <button onclick="increaseFontSize()">تكبير النص</button>
+        <button onclick="decreaseFontSize()">تصغير النص</button>
+    </div>
+    <script>
+        function increaseFontSize() {
+            document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) + 2) + 'px';
+        }
+        function decreaseFontSize() {
+            document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) - 2) + 'px';
+        }
+    </script>
+</body>
+</html>

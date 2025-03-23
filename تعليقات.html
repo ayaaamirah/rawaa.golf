@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- تعريف الترميز واللغة للمستعرض -->
+    <meta charset="UTF-8">
+    <!-- تحديد تكبير وتصغير الصفحة بناءً على حجم الشاشة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- عنوان الصفحة -->
+    <title>التعليقات - منتجع هول ان ون</title>
+    <!-- رابط إلى خط Tajawal من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* التصميم العام */
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* تصميم الهيدر */
+        header {
+            background: linear-gradient(135deg, hsla(133, 32%, 59%, 0.829), #47d167);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* تصميم العنوان في الهيدر */
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: bold;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        /* تصميم شريط التنقل */
+        nav {
+            background-color: #1e8336;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center; /* لضبط الروابط في صف واحد */
+            flex-wrap: wrap; /* يجعل الروابط تتناسب مع الشاشة إذا كانت صغيرة */
+        }
+
+        /* تصميم الروابط في شريط التنقل */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* تأثير عند التمرير فوق الرابط */
+        nav a:hover {
+            color: #1abc9c;
+            transform: translateY(-3px);
+        }
+
+        /* تصميم الحاوية العامة */
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* تصميم العنوان داخل الحاوية */
+        .container h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #2a5298;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* تصميم قسم التعليقات */
+        .feedback-section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* تصميم العناصر داخل قسم التعليقات */
+        .feedback-item {
+            margin-bottom: 20px;
+        }
+
+        /* تصميم حقل النص والعنوان */
+        .feedback-item input, .feedback-item textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        /* تصميم زر الإرسال */
+        .feedback-item button {
+            background-color: #47d167;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* تأثير عند التمرير فوق زر الإرسال */
+        .feedback-item button:hover {
+            background-color: #3e9b56;
+        }
+
+        /* تصميم التذييل */
+        footer {
+            background-color: #47d167;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            font-size: 1.1rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* تصميم النص داخل التذييل */
+        footer p {
+            margin: 0;
+        }
+
+        /* تحسينات للجوال */
+        @media (max-width: 768px) {
+            .feedback-section {
+                padding: 20px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        /* تأثيرات الرسوم المتحركة */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- هيدر الصفحة -->
+    <header>
+        <h1>منتجع هول ان ون</h1>
+    </header>
+
+    <!-- شريط التنقل -->
+    <nav>
+        <a href="index.html">الصفحة الرئيسية</a>
+        <a href="خمس جولات.html">خمسِ جولات</a>
+        <a href="حزمة tee triple.html"> حزمة tee triple</a>
+        <a href="الحزمة المخصصة .html">الحزمة المخصصة</a>
+        <a href="https://wa.me/0775583740">استفسار/حجز</a> <!-- إضافة الرابط هنا -->
+        <a href="الاساله الشائعة .html">الأسئلة الشائعة</a>
+        <a href="حزمة الراحة والرفاهية.html">حزمة الراحة والرفاهية </a>
+        <a href="تعليقات.html">تعليقات</a>
+    </nav>
+
+    <!-- حاوية المحتوى -->
+    <div class="container">
+        <h2>التعليقات</h2>
+
+        <!-- قسم التعليقات -->
+        <div class="feedback-section">
+            <div class="feedback-item">
+                <h3>أدخل تعليقاتك:</h3>
+                <!-- حقل الإدخال للاسم -->
+                <input type="text" id="name" placeholder="اسمك" required>
+                <!-- حقل النص للتعليق -->
+                <textarea id="comment" rows="5" placeholder="اكتب تعليقك هنا..." required></textarea>
+                <!-- زر الإرسال -->
+                <button id="submit-btn">إرسال التعليق</button>
+                <!-- رسالة الاستجابة بعد الإرسال -->
+                <p id="response-message" style="display:none; margin-top: 10px; color: #28a745; font-size: 1.2rem;"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>مرحبًا بكم في منتجعنا - حيث تلتقي الفخامة والاستجمام</p>
+    </footer>
+
+    <script>
+        // الانتظار حتى يتم تحميل الصفحة بالكامل
+        document.addEventListener("DOMContentLoaded", function () {
+            const submitBtn = document.getElementById("submit-btn");
+            const responseMessage = document.getElementById("response-message");
+
+            // إضافة حدث عند النقر على زر الإرسال
+            submitBtn.addEventListener("click", function () {
+                const name = document.getElementById("name").value;
+                const comment = document.getElementById("comment").value;
+
+                // التحقق من وجود بيانات في الحقول
+                if (name && comment) {
+                    responseMessage.innerText = `شكرًا لك، ${name}! تم إرسال تعليقك بنجاح.`;
+                } else if (comment.includes("تحسين")) {
+                    responseMessage.innerText = `شكرًا لملاحظتك، سنعمل على تحسين تلك النقطة.`;
+                } else {
+                    responseMessage.innerText = `أهلاً وسهلاً بك في منتجع هول ان ون!`;
+                }
+                responseMessage.style.display = "block";
+                // إعادة تعيين الحقول بعد الإرسال
+                document.getElementById("name").value = '';
+                document.getElementById("comment").value = '';
+            });
+        });
+    </script>
+    <style>
+        /* التصميم العام */
+        body {
+            font-family: 'Almarai', sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .accessibility-controls {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .accessibility-controls button {
+            font-size: 1rem;
+            padding: 5px 10px;
+            margin: 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="accessibility-controls">
+        <button onclick="increaseFontSize()">تكبير النص</button>
+        <button onclick="decreaseFontSize()">تصغير النص</button>
+    </div>
+    <script>
+        function increaseFontSize() {
+            document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) + 2) + 'px';
+        }
+        function decreaseFontSize() {
+            document.body.style.fontSize = (parseFloat(getComputedStyle(document.body).fontSize) - 2) + 'px';
+        }
+    </script>
+</body>
+</html>
